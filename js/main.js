@@ -47,15 +47,21 @@ function resizeCanvas(canvas) {
     var ctx = canvas.getContext("2d");
 
     function stopLines() {
-        clearInterval(id);
+        if (count>=70){
+            clearInterval(id);
+        } else {
+            setTimeout(stopLines, 1000);
+        }
+
     }
-    setTimeout(stopLines, 1800);
+    var count = 0;
+    setTimeout(stopLines, 1000);
 
     id = setInterval(function(){
         drawRandomLine(ctx);
+        count++;
     }, 1);
 }
-
 
 function drawRandomLine(canvas) {
 

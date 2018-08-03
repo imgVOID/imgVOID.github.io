@@ -54,13 +54,15 @@ function resizeCanvas(canvas) {
         }
 
     }
-    var count = 0;
-    setTimeout(stopLines, 1000);
-
+    
     id = setInterval(function(){
         drawRandomLine(ctx);
         count++;
     }, 1);
+    
+    var count = 0;
+    setTimeout(id, 1000);
+    setTimeout(stopLines, 2000);
 }
 
 function drawRandomLine(canvas) {

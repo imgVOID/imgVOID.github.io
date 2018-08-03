@@ -1,0 +1,253 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+			<div style="position:fixed;z-index:-99;opacity:0;">
+  <img src="/img/django_blog.jpg">
+				<img src="/img/GitHub.jpg">
+				<img src="/img/calculator.jpg">
+				<img src="/img/codecombat.jpg">
+				<img src="/img/wiki.jpg">
+				<img src="/img/responsive_iphone.jpg">
+				<img src="/img/anime_quotes.jpg">
+</div>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Condensed|Lobster|Patua+One|Varela+Round" rel="stylesheet">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-md-4 rightPanel text-center" id="rightPanel">
+                    <!-- NAVIGATION -->
+									<div class="double-mobile-nav">
+										<div class="navigation" id="navigation">
+                        <ul class="nav" id="navTabs">
+                            <li id="navWelcome" class="active navButt text-center"><a href="#welcome" class="black hrf" data-toggle="tab"> Welcome </a></li>
+                            <li id="navPortfolio" class="navButt text-center"><a href="#portfolio" class="black hrf" data-toggle="tab"> Portfolio </a></li>
+                            <li id="navEducation" class="navButt text-center"><a href="#education" class="black hrf" data-toggle="tab"> Education </a></li>
+                        </ul>
+										</div>
+									</div>
+									<div class="navigation no-mobile">
+                        <ul class="nav">
+                            <li id="navWelcome" class="active navButt text-center"><a href="#welcome" class="black hrf" data-toggle="tab"> Welcome </a></li>
+                            <li id="navPortfolio" class="navButt text-center"><a href="#portfolio" class="hrf" data-toggle="tab"> Portfolio </a></li>
+                            <li id="navEducation" class="navButt text-center"><a href="#education" class="hrf" data-toggle="tab"> Education </a></li>
+                        </ul>
+										</div>
+                    <!-- NAVIGATION END -->
+                    <section class="aboutMe">
+                        <img src="icon.png" class="portrait rot"/>
+
+                        <h1 class="myName">Maria Gladka</h1>
+                        <h2 class="aboutMeText">I'm a Junior Full Stack Python WEB-developer, living in KYIV and waiting for some interesting work propositions.</h2>
+                        <div class="social">
+                            <h3 class="socialLinks">contacts:</h3>
+													<h3 class="socialLinks" id="gmail"><a href="javascript:PopUpShow1()">email me</a></h3>
+													<h3 class="socialLinks telegram"><a href="https://www.facebook.com/imgvoid" target="_blank" class="">github</a></h3>
+                        </div>
+                    </section>
+
+                </div>
+
+                <div class="col-xs-12 col-md-8 leftPanel tab-content" id = "leftPanel">
+                    <section class="welcome tab-pane active text-center" id="welcome"><h1 id="welcomeText"> _Web</h1></section>
+                    <section class="portfolio tab-pane" id="portfolio">
+                        <div class="portfolioItems" id="pis">
+
+                            <div class="portfolioItem pi1">
+															<a href="https://github.com/imgVOID/text_from_image" target="_blank" class="popup-link1-hub popup-link">
+                                <h1 class="portfolioItemTitle">Text from image with Google Tesseract OCR</h1>
+																</a>
+                            </div>
+
+                            <div class="portfolioItem pi2">
+															<a href="javascript:PopUpShowDjangoBlog()" class="popup-link django-blog">
+                                <h1 class="portfolioItemTitle">Personal blog on Python Django</h1>
+																</a>
+                            </div>
+                            <div class="portfolioItem pi3">
+                                <a href="https://github.com/imgVOID/servers-failure-simulator" target="_blank" class="popup-link1-hub popup-link">
+                                <h1 class="portfolioItemTitle">Data loss probability calculator</h1>
+																</a>
+                            </div>
+                            <div class="portfolioItem pi4">
+                                <a href="https://github.com/imgVOID/portfolio-site" target="_blank" class="popup-link1-hub popup-link">
+                                <h1 class="portfolioItemTitle">This Perfect;&#41; JavaScript website on the GitHub</h1>
+																</a>
+                            </div>
+                            <div class="portfolioItem pi5">
+                                <a href="javascript:PopUpShowCodecombat()" class="codecombat popup-link">
+                                <h1 class="portfolioItemTitle">Codecombat an English-to-Russian translation</h1>
+																</a>
+                            </div>
+                            <div class="portfolioItem pi6">
+
+															<a href="javascript:PopUpShowWiki()" class="popup-link wiki">
+                                <h1 class="portfolioItemTitle">Wikipedia viewer on the Wiki API without HTML</h1>
+																</a>
+                            </div>
+														<div class="portfolioItem pi2">
+                                <a href="javascript:PopUpShowAnime()" class="popup-link anime-quotes">
+                                <h1 class="portfolioItemTitle">Anime quotes random generator</h1>
+																</a>
+                            </div>
+														<div class="portfolioItem pi1">
+															<a href="javascript:PopUpShowCalculator()" class="popup-link calculator">
+                                <h1 class="portfolioItemTitle">Beautiful responsive AngularJS calculator</h1>
+																</a>
+                            </div>
+														<div class="portfolioItem pi3">
+															<a href="javascript:PopUpShowIphone()" class="popup-link responsive-iphone">
+                                <h1 class="portfolioItemTitle">Responsive Iphone X with weather API</h1>
+																</a>
+                            </div>
+
+                        </div>
+                    </section>
+                    <section class="education tab-pane" id="education">
+										<div class="educationItems">
+                            <div class="educationItem pi1">
+                                <h1 class="educationItemTitle">Bioinformatics Institute</h1>
+                                <h3 class="educationItemAbout first"><a href="https://codepen.io/imgvoid/full/oeVeNX/" target="_blank">Python programming</a> <span> certificate with honor</span></h3>
+                            </div>
+                            <div class="educationItem pi2">
+                                <h1 class="educationItemTitle">Freecodecamp</h1>
+					<h3 class="educationItemAbout first"><a href="https://www.freecodecamp.org/certification/imgvoid/legacy-front-end/" target="_blank">Front End Development</a> <span> certificate</span> </h3>
+                            </div>
+							<div class="educationItem pi3">
+                                <h1 class="educationItemTitle">SoloLearn</h1>
+					<h3 class="educationItemAbout"><a href="https://www.sololearn.com/Certificate/1024-8372893/pdf/" target="_blank">JavaScript programming</a><span>  certificate</span></h3>
+                            </div>
+                            <div class="educationItem pi4">
+                                <h1 class="educationItemTitle">GeekBrains</h1>
+															<h3 class="educationItemAbout"><a href="https://geekbrains.ru/certificates/432679.en" target="_blank">Photoshop</a><span> certificate</span></h3>
+															<h3 class="educationItemAbout"><a href="https://geekbrains.ru/certificates/432675.en" target="_blank">HTML and CSS</a><span> certificate</span></h3>
+															<h3 class="educationItemAbout first"><a href="https://geekbrains.ru/certificates/432243.en" target="_blank">Introduction To Programming</a><span>  certificate</span></h3>
+                            </div>
+                        </div>
+
+									</section>
+                    <canvas id="background"></canvas>
+                </div>
+            </div>
+        </div>
+
+
+			<div class="b-popup" id="gmail_me">
+				<a href="javascript:PopUpHide1()" class="far">HIDE</a>
+					 <iframe seamless frameborder="no" src="index2.html" align="left" class="form">
+    Your browser doesn't support iFrames.
+ </iframe>
+				</div>
+
+			<div class="b-popup" id="popup1"><a href="javascript:PopUpHide()" class="hide-popup">
+				<div class="b-popup-content">
+					<a href="javascript:PopUpHide()" class="far">HIDE</a>
+					<h1 class="popup-header">Anime quotes random generator</h1>
+					<h3 class="popup-about">Code and Demo link: <a href="https://codepen.io/imgvoid/full/oeVeNX/" target="_blank">CodePen</a></h3>
+					<p class="popup-text">
+						Language: Javascript; <br>
+						HTML5, CSS3, Jquery, Ajax, Animate.css, Bootstrap was used.
+					</p>
+				</div>
+				</a></div>
+
+
+			<div class="b-popup" id="popup2">
+				<div class="b-popup-content">
+					<a href="javascript:PopUpHide()" class="far">HIDE</a>
+					<h1 class="popup-header">Personal blog on Python Django</h1>
+					<h3 class="popup-about">Code link: <a href="https://github.com/imgVOID/django_blog" target="_blank">GitHub</a></h3>
+					<p class="popup-text">
+						Language: Python; <br>
+						Framework: Flask; <br>
+						No extra modules (like django-tagging). <br>
+						HTML5, CSS3, Bootstrap was used.
+					</p>
+				</div>
+			</div>
+
+			<div class="b-popup" id="popup3">
+				<div class="b-popup-content">
+					<a href="javascript:PopUpHide()" class="far">HIDE</a>
+					<h1 class="popup-header">Wikipedia viewer on the Wiki API without HTML</h1>
+					<h3 class="popup-about">Code and Demo link: <a href="http://codepen.io/imgvoid/full/OjYJqM/" target="_blank">CodePen</a></h3>
+					<p class="popup-text">
+						Language: JavaScript; <br>
+						Webpage without HTML. <br>
+						Ajax, Wikipedia API, CSS3 was used.
+					</p>
+				</div>
+			</div>
+
+			<div class="b-popup" id="popup4">
+				<div class="b-popup-content">
+					<a href="javascript:PopUpHide()" class="far">HIDE</a>
+					<h1 class="popup-header">Beautiful responsive AngularJS calculator</h1>
+					<h3 class="popup-about">Code and Demo link: <a href="https://codepen.io/imgvoid/full/eGKQoX/" target="_blank">CodePen</a></h3>
+					<p class="popup-text">
+						Language: JavaScript; <br>
+						Framework: AngularJS; <br>
+						HTML5, CSS3 was used.
+					</p>
+				</div>
+			</div>
+
+        <div class="b-popup" id="popup5">
+				<div class="b-popup-content">
+					<a href="javascript:PopUpHide()" class="far">HIDE</a>
+					<h1 class="popup-header">Responsive Iphone X with weather API</h1>
+					<h3 class="popup-about">Code and Demo link: <a href="https://codepen.io/imgvoid/full/paEjoo/" target="_blank">CodePen</a></h3>
+					<p class="popup-text">
+						Language: JavaScript; <br>
+						HTML5, CSS3, Ajax was used.
+					</p>
+				</div>
+			</div>
+
+			<div class="b-popup" id="popup6">
+				<div class="b-popup-content">
+					<a href="javascript:PopUpHide()" class="far">HIDE</a>
+					<h1 class="popup-header">Codecombat an English-to-Russian translation</h1>
+					<h3 class="popup-about">Link: <a href="https://github.com/codecombat/codecombat/commits?author=imgVOID&since=2017-11-30T22:00:00Z&until=2017-12-31T22:00:00Z" target="_blank">GitHub</a></h3>
+					<p class="popup-text">
+						Codecombat - game about learning programming with a plan for teachers\schools. <br>
+						I made some translations from English to Russian languages. I think that it can a little prove my English language knowledge.
+					</p>
+				</div>
+			</div>
+
+
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</html>

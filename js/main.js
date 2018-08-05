@@ -91,6 +91,7 @@ $(document).ready(function(){
     var c = $("#background")[0];
 
     resizeCanvas(c);
+    $("#img_block").append('<img src="/img/django_blog.jpg">');
 });
 
 $(window).resize(function(){

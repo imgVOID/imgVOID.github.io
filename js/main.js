@@ -6,7 +6,8 @@ const classesNav = {
     portf : "#portfolio",
     wel : "#welcome"
 };
-
+$(document).ready(function(){
+$('head').append('<link href="https://fonts.googleapis.com/css?family=Saira+Condensed|Lobster|Patua+One|Varela+Round" rel="stylesheet">');
 function clearClasses(){
     for(var key in classesNav){
         $(classesNav[key]).removeClass('active black');
@@ -37,6 +38,7 @@ for (i = 0; i <=itemBorder.length; i++){
     var random = Math.floor(Math.random()*(itemBorder.length));
     $('.pi'+(i+1)).addClass(itemBorder[random]);
 }
+};
 
 var id;
 

@@ -1,43 +1,3 @@
-const classesNav = {
-    edcA : "#navEducation a",
-    portA : "#navPortfolio a",
-    welA : '#navWelcome a',
-    edc : "#education",
-    portf : "#portfolio",
-    wel : "#welcome"
-};
-
-function clearClasses(){
-    for(var key in classesNav){
-        $(classesNav[key]).removeClass('active black');
-    }
-}
-
-$(classesNav.edcA).click(function () {
-    clearClasses();
-    $(classesNav.edc).addClass('active');
-    $(this).addClass('black')
-});
-
-$(classesNav.portA).click(function () {
-    clearClasses();
-    $(classesNav.portf).addClass('active');
-    $(this).addClass('black')
-});
-
-$(classesNav.welA).click(function () {
-    clearClasses();
-    $(classesNav.wel).addClass('active');
-    $(this).addClass('black')
-});
-
-var itemBorder = ["borderDarkgray","borderDarkgray","borderGray","borderDimgray","borderGray","borderWhitesmoke"];
-
-for (i = 0; i <=itemBorder.length; i++){
-    var random = Math.floor(Math.random()*(itemBorder.length));
-    $('.pi'+(i+1)).addClass(itemBorder[random]);
-}
-
 var id;
 
 function resizeCanvas(canvas) {
@@ -91,6 +51,51 @@ $(document).ready(function(){
     var c = $("#background")[0];
 
     resizeCanvas(c);
+    
+    
+    const classesNav = {
+    edcA : "#navEducation a",
+    portA : "#navPortfolio a",
+    welA : '#navWelcome a',
+    edc : "#education",
+    portf : "#portfolio",
+    wel : "#welcome"
+};
+
+function clearClasses(){
+    for(var key in classesNav){
+        $(classesNav[key]).removeClass('active black');
+    }
+}
+
+$(classesNav.edcA).click(function () {
+    clearClasses();
+    $(classesNav.edc).addClass('active');
+    $(this).addClass('black')
+});
+
+$(classesNav.portA).click(function () {
+    clearClasses();
+    $(classesNav.portf).addClass('active');
+    $(this).addClass('black')
+});
+
+$(classesNav.welA).click(function () {
+    clearClasses();
+    $(classesNav.wel).addClass('active');
+    $(this).addClass('black')
+});
+
+var itemBorder = ["borderDarkgray","borderDarkgray","borderGray","borderDimgray","borderGray","borderWhitesmoke"];
+
+for (i = 0; i <=itemBorder.length; i++){
+    var random = Math.floor(Math.random()*(itemBorder.length));
+    $('.pi'+(i+1)).addClass(itemBorder[random]);
+}
+    
+    
+    
+    
 });
 
 $(window).resize(function(){

@@ -31,6 +31,8 @@ $(classesNav.welA).click(function () {
     $(this).addClass('black')
 });
 
+document.getElementById('img_block').appendChild(document.getElementById('img_add'));
+
 var itemBorder = ["borderDarkgray","borderDarkgray","borderGray","borderDimgray","borderGray","borderWhitesmoke"];
 
 for (i = 0; i <=itemBorder.length; i++){

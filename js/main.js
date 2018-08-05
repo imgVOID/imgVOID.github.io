@@ -1,3 +1,6 @@
+document.head.append('<link rel="stylesheet" href="css/normalize.css"><link rel="stylesheet" href="css/bootstrap.min.css"><link rel="stylesheet" href="css/main.css">');
+
+
 var id;
 
 function resizeCanvas(canvas) {
@@ -51,7 +54,6 @@ function rangedRandom(min, max) {
 
 $(document).ready(function(){
     var c = $("#background")[0];
-    document.head.append('<link rel="stylesheet" href="css/normalize.css"><link rel="stylesheet" href="css/bootstrap.min.css"><link rel="stylesheet" href="css/main.css">');
     resizeCanvas(c);
     
     

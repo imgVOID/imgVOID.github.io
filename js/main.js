@@ -97,7 +97,7 @@ $(window).resize(function(){
     resizeCanvas(c);
 });
 
-document.getElementById('img_block').append('<img src="/img/django_blog.jpg">');
+document.getElementById('img_block').appendChild(document.getElementById('img_add'));
 
 //[].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
   //img.setAttribute('src', img.getAttribute('data-src'));

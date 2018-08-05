@@ -9,7 +9,6 @@
 
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
-        <!-- Place favicon.ico in the root directory -->
 
 
         <link rel="stylesheet" href="css/normalize.css">
@@ -17,14 +16,7 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-			<div style="position:fixed;z-index:-99;opacity:0;">
-  <img src="/img/django_blog.jpg">
-				<img src="/img/GitHub.jpg">
-				<img src="/img/calculator.jpg">
-				<img src="/img/codecombat.jpg">
-				<img src="/img/wiki.jpg">
-				<img src="/img/responsive_iphone.jpg">
-				<img src="/img/anime_quotes.jpg">
+			<div style="position:fixed;z-index:-99;opacity:0;" id="img_block">
 </div>
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
@@ -243,6 +235,21 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
+	    <div id="img_add" style="display:none;">
+		    
+  				<img src="/img/django_blog.jpg">
+				<img src="/img/GitHub.jpg">
+				<img src="/img/calculator.jpg">
+				<img src="/img/codecombat.jpg">
+				<img src="/img/wiki.jpg">
+				<img src="/img/responsive_iphone.jpg">
+				<img src="/img/anime_quotes.jpg">
+	    </div>
+ 
+<script type="text/javascript">
+   document.getElementById('img_block').appendChild(document.getElementById('img_add'));
+</script>
+	    
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>
             window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;

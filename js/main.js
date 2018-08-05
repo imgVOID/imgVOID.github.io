@@ -55,7 +55,7 @@ $(document).ready(function(){
     resizeCanvas(c);
     
     
-    const classesNav = {
+    var classesNav = {
     edcA : "#navEducation a",
     portA : "#navPortfolio a",
     welA : '#navWelcome a',

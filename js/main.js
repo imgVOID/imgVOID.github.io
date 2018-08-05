@@ -7,7 +7,7 @@ function resizeCanvas(canvas) {
     var ctx = canvas.getContext("2d");
 
     function stopLines() {
-        if (count>=70){
+        if (count>=60){
             clearInterval(id);
         } else {
             setTimeout(stopLines, 100);
@@ -24,7 +24,7 @@ function resizeCanvas(canvas) {
     //setTimeout(id, 1000);
     //setTimeout(stopLines, 1100);
     setTimeout(id, 100);
-    setTimeout(stopLines, 300);
+    setTimeout(stopLines, 200);
 }
 
 function drawRandomLine(canvas) {

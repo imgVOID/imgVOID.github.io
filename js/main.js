@@ -95,20 +95,11 @@ for (i = 0; i <=itemBorder.length; i++){
     
     
     
+
     
-});
-
-$(window).resize(function(){
-    resizeCanvas(c);
-});
-
-//[].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
-  //img.setAttribute('src', img.getAttribute('data-src'));
-  //img.onload = function() {
-    //img.removeAttribute('data-src');
-  //};
-//});
-
+    
+    
+    
 function PopUpShow1(){
   $("#gmail_me").show();
 }
@@ -147,3 +138,22 @@ function PopUpShowCodecombat(){
 }
 
 document.getElementById('img_block').appendChild(document.getElementById('img_add'));
+
+    
+    
+    
+    
+    
+    
+});
+
+$(window).resize(function(){
+    resizeCanvas(c);
+});
+
+//[].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
+  //img.setAttribute('src', img.getAttribute('data-src'));
+  //img.onload = function() {
+    //img.removeAttribute('data-src');
+  //};
+//});

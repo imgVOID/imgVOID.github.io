@@ -10,7 +10,7 @@ function resizeCanvas(canvas) {
         if (count>=70){
             clearInterval(id);
         } else {
-            setTimeout(stopLines, 200);
+            setTimeout(stopLines, 100);
         }
 
     }
@@ -22,7 +22,7 @@ function resizeCanvas(canvas) {
     
     var count = 0;
     setTimeout(id, 1000);
-    setTimeout(stopLines, 1200);
+    setTimeout(stopLines, 1100);
 }
 
 function drawRandomLine(canvas) {

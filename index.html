@@ -226,11 +226,7 @@
 				</div>
 			</div>
 	    
-	     <noscript id="deferred-styles">
-    </noscript>
-	    
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script>
+	            <script>
 	    function addCss(src){
             if (document.createStyleSheet) document.createStyleSheet(src);
             else {
@@ -240,9 +236,16 @@
                 stylesheet.type = 'text/css';
                 document.getElementsByTagName('head')[0].appendChild(stylesheet);
             }
-		    addCss('css/main.css');
+		    
         }
+			    addCss('css/main.css');
 	    </script>
+	    
+	     <noscript id="deferred-styles">
+    </noscript>
+	    
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
         <script src="js/main.js"></script>
 	<script>jQuery("head").append("<link rel="stylesheet" href="css/main.css">");</script>
 	    <div id="img_add" style="display:none;">

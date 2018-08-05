@@ -97,6 +97,13 @@ $(window).resize(function(){
     resizeCanvas(c);
 });
 
+[].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
+  img.setAttribute('src', img.getAttribute('data-src'));
+  img.onload = function() {
+    img.removeAttribute('data-src');
+  };
+});
+
 function PopUpShow1(){
   $("#gmail_me").show();
 }
@@ -133,10 +140,3 @@ function PopUpShowIphone(){
 function PopUpShowCodecombat(){
   $("#popup6").show();
 }
-
-[].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
-  img.setAttribute('src', img.getAttribute('data-src'));
-  img.onload = function() {
-    img.removeAttribute('data-src');
-  };
-});

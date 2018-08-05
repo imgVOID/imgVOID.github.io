@@ -1,4 +1,3 @@
-document.head.append('<link rel="stylesheet" href="css/normalize.css"><link rel="stylesheet" href="css/bootstrap.min.css"><link rel="stylesheet" href="css/main.css">');
 
 
 var id;
@@ -53,6 +52,15 @@ function rangedRandom(min, max) {
 }
 
 $(document).ready(function(){
+    var head = document.head;
+    var link = document.createElement('link');
+
+    link.type = 'text/css';
+    link.rel = 'stylesheet';
+    link.href = 'css/main.css';
+    head.appendChild(link);
+    
+    
     var c = $("#background")[0];
     resizeCanvas(c);
     

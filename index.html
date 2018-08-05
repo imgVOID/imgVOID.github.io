@@ -11,6 +11,24 @@
 	<!--<link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">-->
+	    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+        $(document).ready(function(){
+        if($("body").size()>0){
+                if (document.createStyleSheet){
+                    document.createStyleSheet('style.css');
+                }
+                else {
+                    $("head").append($("<link rel='stylesheet' 
+                    href='main.css' 
+                    type='text/css' media='screen' />"));
+		    $("head").append($("<link rel='stylesheet' 
+                    href='bootstrap.min.css' 
+                    type='text/css' media='screen' />"));
+                }
+            }
+        });
+    </script>
         
     </head>
     <body>
@@ -223,20 +241,9 @@
 					</p>
 				</div>
 			</div>
-
-	    <noscript id="deferred-styles">
-      <link rel="stylesheet" href="css/main.css"/>
-    </noscript>
-	    
-	    <noscript id="deferred-styles">
-      <link rel="stylesheet" href="bootstrap.min.css"/>
-    </noscript>
-	    
-	    <noscript id="deferred-styles">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Condensed|Lobster|Patua+One|Varela+Round"/>
-    </noscript>
 	    
 	     <noscript id="deferred-styles">
+		     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Condensed|Lobster|Patua+One|Varela+Round"/>
       <link rel="stylesheet" href="normalize.css"/>
     </noscript>
 	    
@@ -259,7 +266,7 @@
 </script>
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>-->
         <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>

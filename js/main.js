@@ -94,15 +94,9 @@ for (i = 0; i <=itemBorder.length; i++){
     var random = Math.floor(Math.random()*(itemBorder.length));
     $('.pi'+(i+1)).addClass(itemBorder[random]);
 }
-    
-    
-    
 
+    document.getElementById('img_block').appendChild(document.getElementById('img_add'));
     
-    
-    
-    
-
 });
 
 $(window).resize(function(){
@@ -145,15 +139,6 @@ function PopUpShowIphone(){
 function PopUpShowCodecombat(){
   $("#popup6").show();
 }
-
-document.getElementById('img_block').appendChild(document.getElementById('img_add'));
-
-    
-    
-    
-    
-    
-    
 
 //[].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
   //img.setAttribute('src', img.getAttribute('data-src'));

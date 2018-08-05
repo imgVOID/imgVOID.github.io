@@ -96,9 +96,9 @@ $(document).ready(function(){
 $(window).resize(function(){
     resizeCanvas(c);
 });
-$(document).ready(function(){
-    document.getElementById('img_block').append('<img src="/img/django_blog.jpg">');
-});
+
+document.getElementById('img_block').append('<img src="/img/django_blog.jpg">');
+
 //[].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
   //img.setAttribute('src', img.getAttribute('data-src'));
   //img.onload = function() {

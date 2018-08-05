@@ -91,15 +91,14 @@ $(document).ready(function(){
     var c = $("#background")[0];
 
     resizeCanvas(c);
-    $("#img_block").append('<img src="/img/django_blog.jpg">');
 });
 
 $(window).resize(function(){
     resizeCanvas(c);
 });
-
-//document.getElementById('img_block').appendChild(document.getElementById('img_add'));
-
+$(document).ready(function(){
+    document.getElementById('img_block').append('<img src="/img/django_blog.jpg">');
+});
 //[].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
   //img.setAttribute('src', img.getAttribute('data-src'));
   //img.onload = function() {

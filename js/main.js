@@ -6,7 +6,7 @@ const classesNav = {
     portf : "#portfolio",
     wel : "#welcome"
 };
-$(document).ready(function(){
+
 function clearClasses(){
     for(var key in classesNav){
         $(classesNav[key]).removeClass('active black');
@@ -37,7 +37,6 @@ for (i = 0; i <=itemBorder.length; i++){
     var random = Math.floor(Math.random()*(itemBorder.length));
     $('.pi'+(i+1)).addClass(itemBorder[random]);
 }
-})
 
 var id;
 

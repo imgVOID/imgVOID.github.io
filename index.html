@@ -239,6 +239,16 @@
 
     </noscript>
 	    
+	    <script>
+    var cb = function() {
+    var l = document.createElement('link'); l.rel = 'stylesheet';
+    l.href = 'css/bootstrap.min.css';
+    var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h); };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+              webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(cb);
+    else window.addEventListener('load', cb);
+</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>

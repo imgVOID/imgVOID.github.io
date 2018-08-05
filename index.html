@@ -227,12 +227,22 @@
 			</div>
 	    
 	     <noscript id="deferred-styles">
-		     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Condensed|Lobster|Patua+One|Varela+Round"/>
-
     </noscript>
 	    
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script>
+	    function addCss(src){
+            if (document.createStyleSheet) document.createStyleSheet(src);
+            else {
+                var stylesheet = document.createElement('link');
+                stylesheet.href = src;
+                stylesheet.rel = 'stylesheet';
+                stylesheet.type = 'text/css';
+                document.getElementsByTagName('head')[0].appendChild(stylesheet);
+            }
+		    addCss('css/main.css');
+        }
+	    </script>
         <script src="js/main.js"></script>
 	<script>jQuery("head").append("<link rel="stylesheet" href="css/main.css">");</script>
 	    <div id="img_add" style="display:none;">

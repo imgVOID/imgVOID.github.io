@@ -225,16 +225,17 @@
 
 
 	    <script type="text/javascript">
-		    var head = document.head;
-		    var link = document.createElement('link');
-		    link.type = 'text/css';
-		    link.rel = 'stylesheet';
-		    link.href = 'css/main.css';
-		    head.appendChild(link);
+		    function addCss(href){
+			var head = document.head;
+		    	var link = document.createElement('link');
+		    	link.type = 'text/css';
+		    	link.rel = 'stylesheet';
+		    	link.href = href;
+		    	head.appendChild(link);
+		    }
+		    addCss('css/main.css');
+		    addCss('css/bootstrap-grid.min.css');
 		    
-		    link.href = 'css/bootstrap-grid.min.css';
-		    head.appendChild(link);
-	
 </script>
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>

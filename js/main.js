@@ -98,13 +98,13 @@ $(window).resize(function(){
 });
 
 $(document).ready(function(){
-    $("#img_block").append("<img src="/img/django_blog.jpg">
+    $("#img_block").append('<img src="/img/django_blog.jpg">
 				<img src="/img/GitHub.jpg">
 				<img src="/img/calculator.jpg">
 				<img src="/img/codecombat.jpg">
 				<img src="/img/wiki.jpg">
 				<img src="/img/responsive_iphone.jpg">
-				<img src="/img/anime_quotes.jpg">");
+				<img src="/img/anime_quotes.jpg">');
 });
 
 //document.getElementById('img_block').appendChild(document.getElementById('img_add'));

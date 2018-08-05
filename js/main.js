@@ -37,7 +37,7 @@ for (i = 0; i <=itemBorder.length; i++){
     var random = Math.floor(Math.random()*(itemBorder.length));
     $('.pi'+(i+1)).addClass(itemBorder[random]);
 }
-};
+})
 
 var id;
 

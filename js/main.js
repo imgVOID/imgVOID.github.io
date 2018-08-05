@@ -23,8 +23,8 @@ function resizeCanvas(canvas) {
     var count = 0;
     //setTimeout(id, 1000);
     //setTimeout(stopLines, 1100);
-    setTimeout(id, 100);
-    setTimeout(stopLines, 200);
+    setTimeout(id, 300);
+    setTimeout(stopLines, 400);
 }
 
 function drawRandomLine(canvas) {

@@ -97,8 +97,6 @@ $(window).resize(function(){
     resizeCanvas(c);
 });
 
-document.getElementById('img_block').appendChild(document.getElementById('img_add'));
-
 //[].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
   //img.setAttribute('src', img.getAttribute('data-src'));
   //img.onload = function() {
@@ -142,3 +140,5 @@ function PopUpShowIphone(){
 function PopUpShowCodecombat(){
   $("#popup6").show();
 }
+
+document.getElementById('img_block').appendChild(document.getElementById('img_add'));

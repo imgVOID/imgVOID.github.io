@@ -8,9 +8,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
-	<!--<link rel="stylesheet" href="css/normalize.css">-->
+	<!--<link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/main.css">-->
         
     </head>
     <body>
@@ -20,7 +20,6 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Condensed|Lobster|Patua+One|Varela+Round" rel="stylesheet">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-12 col-md-4 rightPanel text-center" id="rightPanel">
@@ -232,18 +231,20 @@
     </noscript>
 	    
 
-	    <!--<script type="text/javascript">
-		    function addCss(href){
-			var head = document.head;
-		    	var link = document.createElement('link');
-		    	link.rel = 'stylesheet';
-		    	link.href = href;
-		    	head.appendChild(link);
-		    }
+	    <script type="text/javascript">
+		    function addCss(src){
+            if (document.createStyleSheet) document.createStyleSheet(src);
+            else {
+                var stylesheet = document.createElement('link');
+                stylesheet.href = src;
+                stylesheet.rel = 'stylesheet';
+                stylesheet.type = 'text/css';
+                document.getElementsByTagName('head')[0].appendChild(stylesheet);
+            }
+        }
 		    
 		    addCss('css/main.css');
 		    addCss('css/bootstrap.min.css');
-		    addCss('css/normalize.css');
 		    addCss('https://fonts.googleapis.com/css?family=Saira+Condensed|Lobster|Patua+One|Varela+Round');
 </script>
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>-->

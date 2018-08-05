@@ -1,11 +1,3 @@
-    var head = document.head;
-    var link = document.createElement('link');
-
-    link.type = 'text/css';
-    link.rel = 'stylesheet';
-    link.href = 'css/main.css';
-    head.appendChild(link);
-
 var id;
 
 function resizeCanvas(canvas) {

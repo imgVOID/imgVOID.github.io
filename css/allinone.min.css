@@ -51,6 +51,7 @@ iframe{overflow:scroll !important;}
 .popup-link{width:28.8vh !important;height:28.8vh !important;}
 .aboutMeText{font-size:2.5rem !important;}
 .myName{font-size:5rem !important;}
+#welcomeText{font-size:30em;}
 }
 @media only screen and (min-width:800px) and (max-width:1200px){.navigation{font-size:1.5rem;width:100%;}
 }

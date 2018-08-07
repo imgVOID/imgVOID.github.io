@@ -1,30 +1,11 @@
-/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
-
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
 html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
 }
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
 
 ::-moz-selection {
     background: #b3d4fc;
@@ -51,8 +32,7 @@ hr {
 
 /*
  * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
+ * images, videos and the bottom of their containers.
  */
 
 audio,
@@ -103,15 +83,9 @@ textarea {
 	opacity:0;
 }
 
-body {
-
-}
-
-.black {
-    color: black;
-    text-decoration: underline;
-	text-decoration-color: darkred !important;
-}
+/*
+ * Links styles start
+ */
 
 a {
     color: black;
@@ -130,25 +104,28 @@ a:active{
     background-color: white;
 }
 
-#rightPanel {
-    height: 100vh;
-    padding: 0;
-	display: inline-block;
-}
+/*
+ * Links styles end
+ */
+/*
+ * Global tabs styles start
+ */
 
 .container-fluid {
     height: 100vh;
     overflow: hidden;
-}
-
-.portfolio {
-    width: 100%;
-    height: 100%;
-    text-align: center;
+    width: 100vw;
 }
 
 .leftPanel {
     padding: 0;
+}
+
+#rightPanel {
+    height: 100vh;
+    padding: 0;
+	display: inline-block;
+    overflow-x: hidden;
 }
 
 #background {
@@ -158,6 +135,19 @@ a:active{
     display: inline;
 	z-index: -1;
 }
+
+.portfolio {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+/*
+ * Global tabs styles end
+ */
+/*
+ * Navigation styles start
+ */
 
 .double-mobile-nav {
 	display: none;
@@ -176,7 +166,6 @@ a:active{
 	display: block;
 }
 
-
 .navButt {
     width: 33.3333%;
     position: relative;
@@ -192,129 +181,29 @@ a:active{
 
 #welcomeText {
 	position: absolute;
-
-
     line-height: 100vh;
     font-family: 'Patua One', cursive;
     color: white;
     font-size: 20rem;
 	background-color:rgba(0, 0, 0, 0);
 }
-.b-popup {
-	z-index: 999 !important;
+
+.black {
+    color: black !important;
+    text-decoration: underline !important;
+	text-decoration-color: darkred !important;
 }
 
-iframe {
-	overflow: scroll !important;
-}
-
-@media only screen and (max-width: 800px){
-	.content-head {
-			text-align: center;
-			margin-bottom: -0.1rem;
-		}
-	.b-popup {
-		height: 80vh;
-	}
-	#welcomeText {
-		top: 1vh;
-		font-size: 8em;
-	}
-	#background {
-	}
-	.container-fluid {
-    height: 100vh;
-    overflow: auto;
-	}
-	.double-mobile-nav {
-		display: block;
-		position: fixed;
-		bottom: 0;
-		width: 100%;
-		z-index: 109 !important;
-		background-color: white;
-	}
-	.no-mobile {
-		display: none;
-	}
-	.navigation {
-		font-size: 1.5rem;
-		width: 100%;
-		margin-bottom: -1vh;
-	}
-	.far {
-		right: 10% !important;
-		top: 6vh !important;
-		font-size: 1.3rem !important;
-	}
-	.educationItemAbout {
-		text-indent: 0rem !important;
-		line-height: 2rem;
-	}
-	.portfolioItems{
-		margin-top: 10vh !important;
-	}
-	.educationItems{
-		margin-top: 10vh !important;
-	}
-	.portfolioItemTitle {
-		font-size: 1.5rem !important;
-	}
-	.social {
-		position: fixed !important;
-		top: 0 !important;
-		background-color: white;
-		z-index: 99 !important;
-		margin-top: -2vh;
-		height: 7vh !important;
-	}
-	.socialLinks {
-		font-size: 1rem !important;
-		background-color: white;
-		padding: 0 -5px 0 -5px;
-		text-decoration: none !important;
-	}
-}
-
-@media only screen and (min-width: 1670px){
-	.portfolioItem {
-		width: 30vh !important;
-		height: 30vh !important;
-	}
-	.popup-link {
-		width: 28.8vh !important;
-		height: 28.8vh !important;
-	}
-	.aboutMeText {
-		font-size: 2.5rem !important;
-	}
-	.myName {
-		font-size: 5rem !important;
-	}
-}
-
-@media only screen and (min-width: 800px) and (max-width: 1200px){
-		.navigation {
-			font-size: 1.5rem;
-			width: 100%;
-	}
-}
-
-@media screen and (orientation: portrait) {
-	.double-mobile-nav {
-		bottom: 0;
-		z-index: 99 !important;
-		background-color: white;
-	}
-}
+/*
+ * Navigation styles end
+ */
+/*
+ * Right panel, about me, social styles start
+ */
 
 .welcome {
     position: relative;
     z-index: 5;
-}
-
-.container-fluid {
-    width: 100vw;
 }
 
 .portrait {
@@ -323,8 +212,6 @@ iframe {
     border: 10px double black;
     margin-top: 5vh;
 }
-
-
 
 img.rot {
     animation: 10s cubic-bezier(.47,-.44,.49,1.46) none running infinite rot;
@@ -342,6 +229,7 @@ img.rot {
     }
 
 }
+
 .aboutMe {
     padding: 5vh;
 }
@@ -376,29 +264,181 @@ img.rot {
 	margin-right: 1rem;
 }
 
+/*
+ * Right panel, about me, social styles end
+ */
+/*
+ * Portfolio tab styles start
+ */
+
 .portfolioItems {
     position: absolute;
-		top: 0;
-		padding-top: 3vh;
-		padding-bottom: 3vh;
+	top: 0;
+	padding-top: 0vh;
+	padding-bottom: 3vh;
     width: 100%;
     height: 100vh;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
-.educationItems {
-    position: absolute;
-		top: 0;
-		padding-top: 3vh;
-		padding-bottom: 3vh;
-    width: 100%;
-    height: 100vh;
-    overflow-y: auto;
+.sortPortfolio{
+    font-size: 1.75rem;
+    font-family: 'Lobster';
+    height: 10vh;
+    margin-bottom: -5vh;
 }
 
-.form {
-	width: 100%;
-	height: 100vh;
+.sortPortfolio .wrapper {
+    background-color: white;
+    padding-top: 0.3rem;
+}
+
+.sortPortfolio .wrapper div{
+    background-color: white;
+    padding-top: 1vh;
+    margin-bottom: -0.45vh;
+    padding-bottom: 0.45vh;
+}
+
+.sortPortfolio .wrapper div a{
+    text-decoration: underline dotted;
+}
+
+.portfolioItem {
+	margin: 0.75vh 1vh 0 1vh;
+    width: 36vh;
+    height: 36vh;
+    display: inline-block;
+    border-radius: 5%;
+    box-shadow: 0 0 1px 3px black;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	z-index: 9;
+}
+
+.portfolioItemTitle {
+    display: inline;
+	color: black;
+    font-size: 2rem;
+    font-family: 'SairaCondensed', sans-serif;
+	font-weight: 600;
+
+}
+
+/*
+ * Portfolio items backgrounds and hovers
+ */
+
+.popup-link {
+	padding: 4vh 2vh 0 2vh;
+	width: 34.25vh;
+	height: 34.25vh;
+	overflow: hidden;
+	display: inline-block;
+	background-color: rgba(255,255,255,0.85) !important;
+	z-index: -1;
+	background-size: cover;
+	background-position: center;
+}
+
+.popup-link1-hub:hover {
+	background-image: url('/img/GitHub.jpg') !important;
+    background-position: center !important;
+}
+
+.popup-link1-hub {
+    background-image: url('/img/GitHub.jpg');
+    background-color: rgba(255,255,255,0.85) !important;
+    background-position: 9000px;
+    background-repeat: no-repeat;
+}
+
+.anime-quotes:hover {
+	background-image: url('/img/anime_quotes.jpg') !important;
+    background-position: center !important;
+}
+
+.anime-quotes {
+    background-image: url('/img/anime_quotes.jpg');
+    background-color: rgba(255,255,255,0.85) !important;
+    background-position: 9000px;
+    background-repeat: no-repeat;
+}
+
+.codecombat:hover {
+	background-image: url('/img/codecombat.jpg') !important;
+    background-position: center !important;
+}
+
+.codecombat {
+    background-image: url('/img/codecombat.jpg');
+    background-color: rgba(255,255,255,0.85) !important;
+    background-position: 9000px;
+    background-repeat: no-repeat;
+}
+
+.wiki:hover {
+	background-image: url('/img/wiki.jpg') !important;
+    background-position: center !important;
+}
+
+.wiki {
+	background-image: url('/img/wiki.jpg');
+    background-color: rgba(255,255,255,0.85) !important;
+    background-position: 9000px;
+    background-repeat: no-repeat;
+}
+
+.django-blog:hover {
+	background-image: url('/img/django_blog.jpg') !important;
+    background-position: center !important;
+}
+
+.django-blog {
+    background-image: url('/img/django_blog.jpg');
+    background-color: rgba(255,255,255,0.85) !important;
+    background-position: 9000px;
+    background-repeat: no-repeat;
+}
+
+.calculator:hover {
+	background-image: url('/img/calculator.jpg') !important;
+    background-position: center !important;
+}
+
+.django-blog {
+    background-image: url('/img/django_blog.jpg');
+    background-color: rgba(255,255,255,0.85) !important;
+    background-position: 9000px;
+    background-repeat: no-repeat;
+}
+
+.responsive-iphone:hover {
+	background-image: url('/img/responsive_iphone.jpg') !important;
+    background-position: center !important;
+}
+
+.responsive-iphone {
+    background-image: url('/img/responsive_iphone.jpg');
+    background-color: rgba(255,255,255,0.85) !important;
+    background-position: 9000px;
+    background-repeat: no-repeat;
+}
+
+.popup-link:hover h1 {
+	background-color: rgba(255,255,255,0) !important;
+	opacity: 0 !important; }
+
+/*
+ * Borders and navigation color styles for JS switching
+ */
+
+.white {
+    color: white !important;
+    cursor: default;
+    text-decoration: none !important;
 }
 
 .borderDarkred {
@@ -425,72 +465,22 @@ img.rot {
     border: whitesmoke 7px double;
 }
 
-.portfolioItem {
-	margin: 1vh;
-    width: 36vh;
-    height: 36vh;
-    display: inline-block;
-    border-radius: 5%;
-    box-shadow: 0 0 1px 3px black;
-	overflow: hidden;
-	background-size: cover;
-	background-position: center;
-	z-index: 9;
+/*
+ * Portfolio tab styles end
+ */
+/*
+ * Education tab styles start
+ */
+
+.educationItems {
+    position: absolute;
+		top: 0;
+		padding-top: 3vh;
+		padding-bottom: 3vh;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
 }
-
-.popup-link {
-	padding: 4vh 2vh 0 2vh;
-			width: 34.25vh;
-	height: 34.25vh;
-	overflow: hidden;
-	display: inline-block;
-	background-color: rgba(255,255,255,0.9);
-	z-index: -1;
-	background-size: cover;
-	background-position: center;
-
-}
-.popup-link1-hub:hover {
-	background-image: url('/img/GitHub.jpg') !important;
-}
-
-.anime-quotes:hover {
-	background-image: url('/img/anime_quotes.jpg') !important;
-}
-
-.codecombat:hover {
-	background-image: url('/img/codecombat.jpg') !important;
-}
-
-.wiki:hover {
-	background-image: url('/img/wiki.jpg') !important;
-}
-
-.django-blog:hover {
-	background-image: url('/img/django_blog.jpg') !important;
-}
-
-.calculator:hover {
-	background-image: url('/img/calculator.jpg') !important;
-}
-
-.responsive-iphone:hover {
-	background-image: url('/img/responsive_iphone.jpg') !important;
-}
-
-.hide-popup {
-	width: 100vw;
-	height: 100vh;
-	background-color: black;
-}
-
-.popup-link:hover{
-	background-color: rgba(255,255,255,0) !important;}
-
-.popup-link:hover h1 {
-	background-color: rgba(255,255,255,0) !important;
-	opacity: 0 !important; }
-
 
 .educationItem {
     margin: 1vh;
@@ -504,15 +494,6 @@ img.rot {
     padding: 2.5vh 5vh 4vh 5vh;
 }
 
-.portfolioItemTitle {
-    display: inline;
-	color: black;
-    font-size: 2rem;
-    font-family: 'SairaCondensed', sans-serif;
-	font-weight: 600;
-
-}
-
 .educationItemTitle {
     display: inline-block;
     font-size: 2rem;
@@ -520,111 +501,6 @@ img.rot {
     font-family: 'Patua One', sans-serif;
 	text-shadow: 0 0 3px white;
 	margin-bottom: -5vh;
-}
-
-
-.b-popup{
-	display: none;
-    width:100%;
-    min-height:100%;
-    overflow:hidden;
-    position:fixed;
-    top:0px;
-	text-align: center;
-	z-index: 7;
-	background-color: rgba(0,0,0,0.7)
-}
-.b-popup .b-popup-content{
-    margin:5vh auto auto auto;
-    width: 90%;
-    height: auto;
-    padding:2.5vh 0 5vh 0;
-    background-color: whitesmoke;
-    border-radius:5px;
-    box-shadow: 0px 0px 10px #000;
-		z-index: 8;
-}
-
-.form{
-    margin:2.5vh 5% auto 5%;
-	display: inline-block;
-	text-align: center;
-    width: 90%;
-    height: 90vh;
-    padding:2.5vh;
-    background-color: whitesmoke;
-    border-radius:5px;
-    box-shadow: 0px 0px 10px #000;
-		z-index: 8;
-}
-
-.far {
-	position: absolute;
-	top: 9vh;
-	right: 8%;
-	z-index: 9;
-	background-color: whitesmoke;
-	font-size: 2rem;
-	color: lightgray;
-	font-family: 'Lobster', cursive;
-}
-
-.far:hover{
-	background-color: whitesmoke
-}
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden {
-    display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    -webkit-clip-path: inset(50%);
-    clip-path: inset(50%);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap; /* 1 */
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    -webkit-clip-path: none;
-    clip-path: none;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-    white-space: inherit;
 }
 
 .educationItemAbout {
@@ -643,8 +519,51 @@ img.rot {
 }
 
 /*
- * POPUP STYLES!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11111
+ * Education tab styles end
 */
+/*
+ * Popup styles start
+*/
+
+.form{
+    margin:2.5vh 5% auto 5%;
+	display: inline-block;
+	text-align: center;
+    width: 90%;
+    height: 90vh;
+    padding:2.5vh;
+    background-color: whitesmoke;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #000;
+	z-index: 8;
+}
+
+iframe {
+	overflow: scroll !important;
+}
+
+.b-popup {
+	display: none;
+    width:100%;
+    min-height:100%;
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+	text-align: center;
+	z-index: 999999 !important;
+	background-color: rgba(0,0,0,0.7)
+}
+
+.b-popup .b-popup-content{
+    margin:5vh auto auto auto;
+    width: 90%;
+    height: auto;
+    padding:2.5vh 0 5vh 0;
+    background-color: whitesmoke;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #000;
+	z-index: 8;
+}
 
 .popup-header {
 	font-family: "Varela Round", sans-serif;
@@ -662,12 +581,185 @@ img.rot {
 	font-size: 1.25rem;
 }
 
+.far {
+	position: absolute;
+	top: 9vh;
+	right: 8%;
+	z-index: 9;
+	background-color: whitesmoke;
+	font-size: 2rem;
+	color: lightgray;
+	font-family: 'Lobster', cursive;
+}
+
+.far:hover{
+	background-color: whitesmoke
+}
+
 /*
- * Hide visually and from screen readers, but maintain layout
+ * Popup styles end
+*/
+
+/* ==========================================================================
+   Media Queries for Responsive Design.
+   ========================================================================== */
+
+@media only screen and (max-width: 1000px){
+	.content-head {
+			text-align: center;
+			margin-bottom: -0.1rem;
+		}
+	.b-popup {
+		height: 80vh;
+        padding-right: 2vw;
+        padding-left: 2vw;
+	}
+    .popup-header {
+        font-size: 1.75rem;
+    }
+    .popup-about {
+        font-size: 1.25rem;
+    }
+	#welcomeText {
+		top: 1vh;
+		font-size: 8em;
+	}
+	.container-fluid {
+    height: 100vh;
+    overflow: auto;
+	}
+	.double-mobile-nav {
+		display: block;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		z-index: 109 !important;
+		background-color: white;
+	}
+	.no-mobile {
+		display: none;
+	}
+	.navigation {
+		font-size: 1.5rem;
+		width: 100%;
+		margin-bottom: -1vh;
+	}
+	.far {
+		right: 10% !important;
+		top: 6vh !important;
+		font-size: 1.3rem !important;
+	}
+	.educationItemAbout {
+		text-indent: 0rem !important;
+		line-height: 2rem;
+	}
+	.portfolioItems{
+		margin-top: 0vh !important;
+	}
+	.educationItems{
+		margin-top: 10vh !important;
+	}
+	.portfolioItemTitle {
+		font-size: 1.5rem !important;
+	}
+    .portfolioItem {
+        height: 70vh !important;
+        width: 70vh !important;
+    }
+    .popup-link {
+        height: 67vh !important;
+        width: 67vh !important;
+    }
+	.social {
+		position: fixed !important;
+		top: 0 !important;
+		background-color: white;
+		z-index: 99 !important;
+		margin-top: -2vh;
+		height: 7vh !important;
+	}
+	.socialLinks {
+		font-size: 1rem !important;
+		background-color: white;
+		padding: 0 -5px 0 -5px;
+		text-decoration: none !important;
+	}
+    .sortPortfolio {
+        margin-bottom: 9.5rem !important;
+        height:2rem !important;
+        margin-top: -2vh !important;
+    }
+    .rightPanel {
+        overflow: visible !important;
+        display: float !important;
+        z-index: 999 !important;
+    }
+}
+
+@media screen and (orientation: portrait) {
+	.double-mobile-nav {
+		bottom: 0;
+		z-index: 99 !important;
+		background-color: white;
+	}
+    .sortPortfolio {
+        margin-bottom: 10.5rem !important;
+        height:2rem !important;
+        margin-top: -0vh !important;
+        z-index: 1 !important;
+    }
+    .rightPanel {
+        overflow: visible !important;
+        display: float !important;
+        z-index: 999 !important;
+    }
+    .portfolioItem {
+        height: 90vw !important;
+        width: 90vw !important;
+    }
+    .popup-link {
+        height: 87vw !important;
+        width: 87vw !important;
+    }
+}
+
+@media only screen and (min-width: 1670px){
+	.portfolioItem {
+		width: 30vh !important;
+		height: 30vh !important;
+	}
+	.popup-link {
+		width: 28.8vh !important;
+		height: 28.8vh !important;
+	}
+	.aboutMeText {
+		font-size: 2.5rem !important;
+	}
+	.myName {
+		font-size: 5rem !important;
+	}
+    #welcomeText {
+        font-size:30em;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px){
+		.navigation {
+			font-size: 1.5rem;
+			width: 100%;
+	}
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
  */
 
-.invisible {
-    visibility: hidden;
+.hidden {
+    display: none !important;
 }
 
 /*
@@ -693,26 +785,7 @@ img.rot {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
    Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
 @media print {
@@ -759,8 +832,7 @@ img.rot {
     }
 
     /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     * Printing Tables.
      */
 
     thead {

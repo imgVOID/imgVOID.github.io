@@ -221,6 +221,20 @@
     <noscript id="deferred-styles">
         <link rel="stylesheet" type="text/css" href="css/allinone.min.css" />
     </noscript>
+	
+	<script>
+	     function addCss(src){
+            if (document.createStyleSheet) document.createStyleSheet(src);
+            else {
+                var stylesheet = document.createElement('link');
+                stylesheet.href = src;
+                stylesheet.rel = 'stylesheet';
+                stylesheet.type = 'text/css';
+                document.getElementsByTagName('head')[0].appendChild(stylesheet);
+            }
+        }
+		    addCss('css/allinone.min.css');
+	    </script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
     </script>

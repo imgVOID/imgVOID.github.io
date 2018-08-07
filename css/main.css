@@ -1,35 +1,32 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+	color: #222;
+	font-size: 1em;
+	line-height: 1.4;
 }
-
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+	background: #b3d4fc;
+	text-shadow: none;
 }
-
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+	background: #b3d4fc;
+	text-shadow: none;
 }
-
 /*
  * A better looking default horizontal rule
  */
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
 }
-
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers.
@@ -41,110 +38,99 @@ iframe,
 img,
 svg,
 video {
-    vertical-align: middle;
+	vertical-align: middle;
 }
-
 /*
  * Remove default fieldset styles.
  */
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+	border: 0;
+	margin: 0;
+	padding: 0;
 }
-
 /*
  * Allow only vertical resizing of textareas.
  */
 
 textarea {
-    resize: vertical;
+	resize: vertical;
 }
-
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
 
 .browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
 }
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
 .preload {
-	position:fixed;
-	z-index:-99;
-	opacity:0;
+	position: fixed;
+	z-index: -99;
+	opacity: 0;
 }
-
 /*
  * Links styles start
  */
 
 a {
-    color: black;
-    text-decoration: none;
+	color: black;
+	text-decoration: none;
 }
-
-a:hover{
-    color: darkred;
-    text-decoration: underline dotted;
-    background-color: white;
+a:hover {
+	color: darkred;
+	text-decoration: underline dotted;
+	background-color: white;
 }
-
-a:active{
-    color: darkred;
-    text-decoration: underline dotted;
-    background-color: white;
+a:active {
+	color: darkred;
+	text-decoration: underline dotted;
+	background-color: white;
 }
-
 /*
  * Links styles end
  */
+
 /*
  * Global tabs styles start
  */
 
 .container-fluid {
-    height: 100vh;
-    overflow: hidden;
-    width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	width: 100vw;
 }
-
 .leftPanel {
-    padding: 0;
+	padding: 0;
 }
-
 #rightPanel {
-    height: 100vh;
-    padding: 0;
+	height: 100vh;
+	padding: 0;
 	display: inline-block;
-    overflow-x: hidden;
+	overflow-x: hidden;
 }
-
 #background {
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    display: inline;
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	display: inline;
 	z-index: -1;
 }
-
 .portfolio {
-    width: 100%;
-    height: 100%;
-    text-align: center;
+	width: 100%;
+	height: 100%;
+	text-align: center;
 }
-
 /*
  * Global tabs styles end
  */
+
 /*
  * Navigation styles start
  */
@@ -152,181 +138,159 @@ a:active{
 .double-mobile-nav {
 	display: none;
 }
-
 .navigation {
-    height: 10vh;
-    width: 100%;
-    font-family: 'Lobster', cursive;
-    font-size: 2rem;
-		position: relative;
-    margin-bottom: -5vh;
+	height: 10vh;
+	width: 100%;
+	font-family: 'Lobster', cursive;
+	font-size: 2rem;
+	position: relative;
+	margin-bottom: -5vh;
 }
-
 .navigation ul {
 	display: block;
 }
-
 .navButt {
-    width: 33.3333%;
-    position: relative;
-    display: inline;
-    float: left;
+	width: 33.3333%;
+	position: relative;
+	display: inline;
+	float: left;
 	text-decoration: underline dotted !important;
 }
-
 .hrf {
-    display: inline;
+	display: inline;
 	text-decoration-color: darkred !important;
 }
-
 #welcomeText {
 	position: absolute;
-    line-height: 100vh;
-    font-family: 'Patua One', cursive;
-    color: white;
-    font-size: 20rem;
-	background-color:rgba(0, 0, 0, 0);
+	line-height: 100vh;
+	font-family: 'Patua One', cursive;
+	color: white;
+	font-size: 20rem;
+	background-color: rgba(0, 0, 0, 0);
 }
-
 .black {
-    color: black !important;
-    text-decoration: underline !important;
+	color: black !important;
+	text-decoration: underline !important;
 	text-decoration-color: darkred !important;
 }
-
 /*
  * Navigation styles end
  */
+
 /*
  * Right panel, about me, social styles start
  */
 
 .welcome {
-    position: relative;
-    z-index: 5;
+	position: relative;
+	z-index: 5;
 }
-
 .portrait {
-    width: 30vh;
-    height: 30vh;
-    border: 10px double black;
-    margin-top: 5vh;
+	width: 30vh;
+	height: 30vh;
+	border: 10px double black;
+	margin-top: 5vh;
 }
-
 img.rot {
-    animation: 10s cubic-bezier(.47,-.44,.49,1.46) none running infinite rot;
-    -webkit-animation: 10s cubic-bezier(.47,-.44,.49,1.46) none infinite running rot;
+	animation: 10s cubic-bezier(.47, -.44, .49, 1.46) none running infinite rot;
+	-webkit-animation: 10s cubic-bezier(.47, -.44, .49, 1.46) none infinite running rot;
 }
 @keyframes rot {
-    0% {
-        transform: rotate(0deg);
-    }
-    25% {
-        transform: rotate(-5deg);
-    }
-    50% {
-        transform: rotate(7deg);
-    }
-
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(-5deg);
+	}
+	50% {
+		transform: rotate(7deg);
+	}
 }
-
 .aboutMe {
-    padding: 5vh;
+	padding: 5vh;
 }
-
 .myName {
-    font-family: 'Patua One', cursive;
-    font-size: 4.4rem;
-    color: black;
+	font-family: 'Patua One', cursive;
+	font-size: 4.4rem;
+	color: black;
 }
-
-.aboutMeText{
-    font-family: 'Saira Condensed', sans-serif;
-    font-size: 1.5rem;
-    color: black;
+.aboutMeText {
+	font-family: 'Saira Condensed', sans-serif;
+	font-size: 1.5rem;
+	color: black;
 }
-
 .social {
-    height: 12vh;
-    position: absolute;
-    bottom: 0;
+	height: 12vh;
+	position: absolute;
+	bottom: 0;
 	left: 0;
-    width: 100%;
+	width: 100%;
 	padding-top: 3vh;
 }
-
 .socialLinks {
-    font-family: 'Lobster', cursive;
-    color: black;
-    text-decoration: underline dotted;
+	font-family: 'Lobster', cursive;
+	color: black;
+	text-decoration: underline dotted;
 	display: inline;
 	margin-left: 1rem;
 	margin-right: 1rem;
 }
-
 /*
  * Right panel, about me, social styles end
  */
+
 /*
  * Portfolio tab styles start
  */
 
 .portfolioItems {
-    position: absolute;
+	position: absolute;
 	top: 0;
 	padding-top: 0vh;
 	padding-bottom: 3vh;
-    width: 100%;
-    height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
+	width: 100%;
+	height: 100vh;
+	overflow-y: auto;
+	overflow-x: hidden;
 }
-
-.sortPortfolio{
-    font-size: 1.75rem;
-    font-family: 'Lobster';
-    height: 10vh;
-    margin-bottom: -5vh;
+.sortPortfolio {
+	font-size: 1.75rem;
+	font-family: 'Lobster';
+	height: 10vh;
+	margin-bottom: -5vh;
 }
-
 .sortPortfolio .wrapper {
-    background-color: white;
-    padding-top: 0.3rem;
+	background-color: white;
+	padding-top: 0.3rem;
 }
-
-.sortPortfolio .wrapper div{
-    background-color: white;
-    padding-top: 1vh;
-    margin-bottom: -0.45vh;
-    padding-bottom: 0.45vh;
+.sortPortfolio .wrapper div {
+	background-color: white;
+	padding-top: 1vh;
+	margin-bottom: -0.45vh;
+	padding-bottom: 0.45vh;
 }
-
-.sortPortfolio .wrapper div a{
-    text-decoration: underline dotted;
+.sortPortfolio .wrapper div a {
+	text-decoration: underline dotted;
 }
-
 .portfolioItem {
 	margin: 0.75vh 1vh 0 1vh;
-    width: 36vh;
-    height: 36vh;
-    display: inline-block;
-    border-radius: 5%;
-    box-shadow: 0 0 1px 3px black;
+	width: 36vh;
+	height: 36vh;
+	display: inline-block;
+	border-radius: 5%;
+	box-shadow: 0 0 1px 3px black;
 	overflow: hidden;
 	background-size: cover;
 	background-position: center;
 	z-index: 9;
 }
-
 .portfolioItemTitle {
-    display: inline;
+	display: inline;
 	color: black;
-    font-size: 2rem;
-    font-family: 'SairaCondensed', sans-serif;
+	font-size: 2rem;
+	font-family: 'SairaCondensed', sans-serif;
 	font-weight: 600;
-
 }
-
 /*
  * Portfolio items backgrounds and hovers
  */
@@ -337,172 +301,149 @@ img.rot {
 	height: 34.25vh;
 	overflow: hidden;
 	display: inline-block;
-	background-color: rgba(255,255,255,0.85) !important;
+	background-color: rgba(255, 255, 255, 0.85) !important;
 	z-index: -1;
 	background-size: cover;
 	background-position: center;
 }
-
 .popup-link1-hub:hover {
 	background-image: url('/img/GitHub.jpg') !important;
-    background-position: center !important;
+	background-position: center !important;
 }
-
 .popup-link1-hub {
-    background-image: url('/img/GitHub.jpg');
-    background-color: rgba(255,255,255,0.85) !important;
-    background-position: 9000px;
-    background-repeat: no-repeat;
+	background-image: url('/img/GitHub.jpg');
+	background-color: rgba(255, 255, 255, 0.85) !important;
+	background-position: 9000px;
+	background-repeat: no-repeat;
 }
-
 .anime-quotes:hover {
 	background-image: url('/img/anime_quotes.jpg') !important;
-    background-position: center !important;
+	background-position: center !important;
 }
-
 .anime-quotes {
-    background-image: url('/img/anime_quotes.jpg');
-    background-color: rgba(255,255,255,0.85) !important;
-    background-position: 9000px;
-    background-repeat: no-repeat;
+	background-image: url('/img/anime_quotes.jpg');
+	background-color: rgba(255, 255, 255, 0.85) !important;
+	background-position: 9000px;
+	background-repeat: no-repeat;
 }
-
 .codecombat:hover {
 	background-image: url('/img/codecombat.jpg') !important;
-    background-position: center !important;
+	background-position: center !important;
 }
-
 .codecombat {
-    background-image: url('/img/codecombat.jpg');
-    background-color: rgba(255,255,255,0.85) !important;
-    background-position: 9000px;
-    background-repeat: no-repeat;
+	background-image: url('/img/codecombat.jpg');
+	background-color: rgba(255, 255, 255, 0.85) !important;
+	background-position: 9000px;
+	background-repeat: no-repeat;
 }
-
 .wiki:hover {
 	background-image: url('/img/wiki.jpg') !important;
-    background-position: center !important;
+	background-position: center !important;
 }
-
 .wiki {
 	background-image: url('/img/wiki.jpg');
-    background-color: rgba(255,255,255,0.85) !important;
-    background-position: 9000px;
-    background-repeat: no-repeat;
+	background-color: rgba(255, 255, 255, 0.85) !important;
+	background-position: 9000px;
+	background-repeat: no-repeat;
 }
-
 .django-blog:hover {
 	background-image: url('/img/django_blog.jpg') !important;
-    background-position: center !important;
+	background-position: center !important;
 }
-
 .django-blog {
-    background-image: url('/img/django_blog.jpg');
-    background-color: rgba(255,255,255,0.85) !important;
-    background-position: 9000px;
-    background-repeat: no-repeat;
+	background-image: url('/img/django_blog.jpg');
+	background-color: rgba(255, 255, 255, 0.85) !important;
+	background-position: 9000px;
+	background-repeat: no-repeat;
 }
-
 .calculator:hover {
 	background-image: url('/img/calculator.jpg') !important;
-    background-position: center !important;
+	background-position: center !important;
 }
-
 .django-blog {
-    background-image: url('/img/django_blog.jpg');
-    background-color: rgba(255,255,255,0.85) !important;
-    background-position: 9000px;
-    background-repeat: no-repeat;
+	background-image: url('/img/django_blog.jpg');
+	background-color: rgba(255, 255, 255, 0.85) !important;
+	background-position: 9000px;
+	background-repeat: no-repeat;
 }
-
 .responsive-iphone:hover {
 	background-image: url('/img/responsive_iphone.jpg') !important;
-    background-position: center !important;
+	background-position: center !important;
 }
-
 .responsive-iphone {
-    background-image: url('/img/responsive_iphone.jpg');
-    background-color: rgba(255,255,255,0.85) !important;
-    background-position: 9000px;
-    background-repeat: no-repeat;
+	background-image: url('/img/responsive_iphone.jpg');
+	background-color: rgba(255, 255, 255, 0.85) !important;
+	background-position: 9000px;
+	background-repeat: no-repeat;
 }
-
 .popup-link:hover h1 {
-	background-color: rgba(255,255,255,0) !important;
-	opacity: 0 !important; }
-
+	background-color: rgba(255, 255, 255, 0) !important;
+	opacity: 0 !important;
+}
 /*
  * Borders and navigation color styles for JS switching
  */
 
 .white {
-    color: white !important;
-    cursor: default;
-    text-decoration: none !important;
+	color: white !important;
+	cursor: default;
+	text-decoration: none !important;
 }
-
 .borderDarkred {
-    border: white 7px double;
+	border: white 7px double;
 }
-
 .borderDarkgray {
-    border: slategray 7px double;
+	border: slategray 7px double;
 }
-
 .borderGray {
-    border: darkgray 7px double;
+	border: darkgray 7px double;
 }
-
 .borderDimgray {
-    border: dimgray 7px double;
+	border: dimgray 7px double;
 }
-
 .borderSlategray {
-    border: black 7px double;
+	border: black 7px double;
 }
-
 .borderWhitesmoke {
-    border: whitesmoke 7px double;
+	border: whitesmoke 7px double;
 }
-
 /*
  * Portfolio tab styles end
  */
+
 /*
  * Education tab styles start
  */
 
 .educationItems {
-    position: absolute;
-		top: 0;
-		padding-top: 3vh;
-		padding-bottom: 3vh;
-    width: 100%;
-    height: 100vh;
-    overflow-y: auto;
+	position: absolute;
+	top: 0;
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+	width: 100%;
+	height: 100vh;
+	overflow-y: auto;
 }
-
 .educationItem {
-    margin: 1vh;
-    width: 90%;
-		margin-left: 5%;
-    height: auto;
-    display: inline-block;
-    background-color: rgba(255,255,255,0.7);;
-    border-radius: 1vh;
-    box-shadow: 0 0 1px 3px black;
-    padding: 2.5vh 5vh 4vh 5vh;
+	margin: 1vh;
+	width: 90%;
+	margin-left: 5%;
+	height: auto;
+	display: inline-block;
+	background-color: rgba(255, 255, 255, 0.7);
+	;
+	border-radius: 1vh;
+	box-shadow: 0 0 1px 3px black;
+	padding: 2.5vh 5vh 4vh 5vh;
 }
-
 .educationItemTitle {
-    display: inline-block;
-    font-size: 2rem;
+	display: inline-block;
+	font-size: 2rem;
 	color: black;
-    font-family: 'Patua One', sans-serif;
+	font-family: 'Patua One', sans-serif;
 	text-shadow: 0 0 3px white;
 	margin-bottom: -5vh;
 }
-
 .educationItemAbout {
 	font-family: "Saira Condensed", sans-serif;
 	text-align: center;
@@ -510,77 +451,72 @@ img.rot {
 	text-align: left;
 	margin-top: 0.5rem;
 	text-indent: 2rem;
-} .educationItemAbout a {
+}
+.educationItemAbout a {
 	background-color: white;
 	text-decoration: underline;
 	text-decoration-color: darkred;
-} .educationItemAbout span {
+}
+.educationItemAbout span {
 	text-shadow: 0 0 4px white;
 }
-
 /*
  * Education tab styles end
 */
+
 /*
  * Popup styles start
 */
 
-.form{
-    margin:2.5vh 5% auto 5%;
+.form {
+	margin: 2.5vh 5% auto 5%;
 	display: inline-block;
 	text-align: center;
-    width: 90%;
-    height: 90vh;
-    padding:2.5vh;
-    background-color: whitesmoke;
-    border-radius:5px;
-    box-shadow: 0px 0px 10px #000;
+	width: 90%;
+	height: 90vh;
+	padding: 2.5vh;
+	background-color: whitesmoke;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px #000;
 	z-index: 8;
 }
-
 iframe {
 	overflow: scroll !important;
 }
-
 .b-popup {
 	display: none;
-    width:100%;
-    min-height:100%;
-    overflow:hidden;
-    position:fixed;
-    top:0px;
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	position: fixed;
+	top: 0px;
 	text-align: center;
 	z-index: 999999 !important;
-	background-color: rgba(0,0,0,0.7)
+	background-color: rgba(0, 0, 0, 0.7)
 }
-
-.b-popup .b-popup-content{
-    margin:5vh auto auto auto;
-    width: 90%;
-    height: auto;
-    padding:2.5vh 0 5vh 0;
-    background-color: whitesmoke;
-    border-radius:5px;
-    box-shadow: 0px 0px 10px #000;
+.b-popup .b-popup-content {
+	margin: 5vh auto auto auto;
+	width: 90%;
+	height: auto;
+	padding: 2.5vh 0 5vh 0;
+	background-color: whitesmoke;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px #000;
 	z-index: 8;
 }
-
 .popup-header {
 	font-family: "Varela Round", sans-serif;
 	text-align: center;
 }
-
 .popup-about {
 	font-family: "Varela Round", sans-serif;
 	text-align: center;
 }
-
 .popup-text {
 	margin: 0 25% 0 25%;
 	font-family: "Saira Condensed", sans-serif;
 	font-size: 1.25rem;
 }
-
 .far {
 	position: absolute;
 	top: 9vh;
@@ -591,11 +527,9 @@ iframe {
 	color: lightgray;
 	font-family: 'Lobster', cursive;
 }
-
-.far:hover{
+.far:hover {
 	background-color: whitesmoke
 }
-
 /*
  * Popup styles end
 */
@@ -604,29 +538,29 @@ iframe {
    Media Queries for Responsive Design.
    ========================================================================== */
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1000px) {
 	.content-head {
-			text-align: center;
-			margin-bottom: -0.1rem;
-		}
+		text-align: center;
+		margin-bottom: -0.1rem;
+	}
 	.b-popup {
 		height: 80vh;
-        padding-right: 2vw;
-        padding-left: 2vw;
+		padding-right: 2vw;
+		padding-left: 2vw;
 	}
-    .popup-header {
-        font-size: 1.75rem;
-    }
-    .popup-about {
-        font-size: 1.25rem;
-    }
+	.popup-header {
+		font-size: 1.75rem;
+	}
+	.popup-about {
+		font-size: 1.25rem;
+	}
 	#welcomeText {
 		top: 1vh;
 		font-size: 8em;
 	}
 	.container-fluid {
-    height: 100vh;
-    overflow: auto;
+		height: 100vh;
+		overflow: auto;
 	}
 	.double-mobile-nav {
 		display: block;
@@ -653,23 +587,23 @@ iframe {
 		text-indent: 0rem !important;
 		line-height: 2rem;
 	}
-	.portfolioItems{
+	.portfolioItems {
 		margin-top: 0vh !important;
 	}
-	.educationItems{
+	.educationItems {
 		margin-top: 10vh !important;
 	}
 	.portfolioItemTitle {
 		font-size: 1.5rem !important;
 	}
-    .portfolioItem {
-        height: 70vh !important;
-        width: 70vh !important;
-    }
-    .popup-link {
-        height: 67vh !important;
-        width: 67vh !important;
-    }
+	.portfolioItem {
+		height: 70vh !important;
+		width: 70vh !important;
+	}
+	.popup-link {
+		height: 67vh !important;
+		width: 67vh !important;
+	}
 	.social {
 		position: fixed !important;
 		top: 0 !important;
@@ -684,46 +618,44 @@ iframe {
 		padding: 0 -5px 0 -5px;
 		text-decoration: none !important;
 	}
-    .sortPortfolio {
-        margin-bottom: 9.5rem !important;
-        height:2rem !important;
-        margin-top: -2vh !important;
-    }
-    .rightPanel {
-        overflow: visible !important;
-        display: float !important;
-        z-index: 999 !important;
-    }
+	.sortPortfolio {
+		margin-bottom: 9.5rem !important;
+		height: 2rem !important;
+		margin-top: -2vh !important;
+	}
+	.rightPanel {
+		overflow: visible !important;
+		display: float !important;
+		z-index: 999 !important;
+	}
 }
-
 @media screen and (orientation: portrait) {
 	.double-mobile-nav {
 		bottom: 0;
 		z-index: 99 !important;
 		background-color: white;
 	}
-    .sortPortfolio {
-        margin-bottom: 10.5rem !important;
-        height:2rem !important;
-        margin-top: -0vh !important;
-        z-index: 1 !important;
-    }
-    .rightPanel {
-        overflow: visible !important;
-        display: float !important;
-        z-index: 999 !important;
-    }
-    .portfolioItem {
-        height: 90vw !important;
-        width: 90vw !important;
-    }
-    .popup-link {
-        height: 87vw !important;
-        width: 87vw !important;
-    }
+	.sortPortfolio {
+		margin-bottom: 10.5rem !important;
+		height: 2rem !important;
+		margin-top: -0vh !important;
+		z-index: 1 !important;
+	}
+	.rightPanel {
+		overflow: visible !important;
+		display: float !important;
+		z-index: 999 !important;
+	}
+	.portfolioItem {
+		height: 90vw !important;
+		width: 90vw !important;
+	}
+	.popup-link {
+		height: 87vw !important;
+		width: 87vw !important;
+	}
 }
-
-@media only screen and (min-width: 1670px){
+@media only screen and (min-width: 1670px) {
 	.portfolioItem {
 		width: 30vh !important;
 		height: 30vh !important;
@@ -738,18 +670,16 @@ iframe {
 	.myName {
 		font-size: 5rem !important;
 	}
-    #welcomeText {
-        font-size:30em;
-    }
-}
-
-@media only screen and (min-width: 800px) and (max-width: 1200px){
-		.navigation {
-			font-size: 1.5rem;
-			width: 100%;
+	#welcomeText {
+		font-size: 30em;
 	}
 }
-
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+	.navigation {
+		font-size: 1.5rem;
+		width: 100%;
+	}
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -759,9 +689,8 @@ iframe {
  */
 
 .hidden {
-    display: none !important;
+	display: none !important;
 }
-
 /*
  * Clearfix: contain floats
  *
@@ -776,83 +705,73 @@ iframe {
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+	content: " ";
+	/* 1 */
+	display: table;
+	/* 2 */
 }
-
 .clearfix:after {
-    clear: both;
+	clear: both;
 }
-
 /* ==========================================================================
    Print styles.
    ========================================================================== */
 
 @media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+	*,
+	*:before,
+	*:after {
+		background: transparent !important;
+		color: #000 !important;
+		/* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+	a[href]:after {
+		content: " (" attr(href)")";
+	}
+	abbr[title]:after {
+		content: " (" attr(title)")";
+	}
+	/*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre {
-        white-space: pre-wrap !important;
-    }
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    /*
+	a[href^="#"]:after,
+	a[href^="javascript:"]:after {
+		content: "";
+	}
+	pre {
+		white-space: pre-wrap !important;
+	}
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+	/*
      * Printing Tables.
      */
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+	thead {
+		display: table-header-group;
+	}
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
 }

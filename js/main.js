@@ -181,3 +181,7 @@ function PopUpShowIphone() {
 function PopUpShowCodecombat() {
     $('#popup6').show();
 }
+
+function PopUpShowHats() {
+    $('#popup7').show();
+}

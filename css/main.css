@@ -227,6 +227,25 @@ img.rot {
 	width: 100%;
 	padding-top: 3vh;
 }
+
+.linlin {
+	height: 12vh;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding-top: 3vh;
+}
+
+.sls {
+	font-family: 'Lobster', cursive;
+	color: black;
+	text-decoration: underline dotted;
+	display: inline !important;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
 .socialLinks {
 	font-family: 'Lobster', cursive;
 	color: black;

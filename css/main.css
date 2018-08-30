@@ -688,9 +688,7 @@ iframe {
  * Hide visually and from screen readers
  */
 
-.hidden {
-	display: none !important;
-}
+
 /*
  * Clearfix: contain floats
  *

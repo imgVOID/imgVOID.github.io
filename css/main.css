@@ -363,11 +363,15 @@ img.rot {
 	background-image: url('/img/calculator.jpg') !important;
 	background-position: center !important;
 }
-.django-blog {
-	background-image: url('/img/django_blog.jpg');
+.hats {
+	background-image: url('/img/woocommerce-wordpress-min.jpg');
 	background-color: rgba(255, 255, 255, 0.85) !important;
 	background-position: 9000px;
 	background-repeat: no-repeat;
+}
+.hats:hover {
+	background-image: url('/img/woocommerce-wordpress-min.jpg') !important;
+	background-position: center !important;
 }
 .responsive-iphone:hover {
 	background-image: url('/img/responsive_iphone.jpg') !important;

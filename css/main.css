@@ -623,7 +623,7 @@ iframe {
 		height: 67vh !important;
 		width: 67vh !important;
 	}
-	.social {
+	.linlin {
 		position: fixed !important;
 		top: 0 !important;
 		background-color: white;
@@ -631,7 +631,7 @@ iframe {
 		margin-top: -2vh;
 		height: 7vh !important;
 	}
-	.socialLinks {
+	.sls {
 		font-size: 1rem !important;
 		background-color: white;
 		padding: 0 -5px 0 -5px;

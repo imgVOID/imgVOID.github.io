@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: imgvoid.github.io 
+Token: aa0d9f8e84fe0fd574865804a747fe1f6e00832696f67cfdd81b621e39a401a4
